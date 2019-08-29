@@ -1,0 +1,188 @@
+*{
+    margin:0px;
+    padding: auto;
+}
+
+body{
+    background-color:#F2A413;
+}
+/* let's apply styles to the page starting with the nav-bar */
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color:#A65D05;
+   width: 100%; 
+   
+}
+
+.contact a{
+    text-decoration:none;
+    font-family:cursive;
+    color: #000;
+} 
+.drop-btn{ 
+    background-color:#A65D05;
+    border: none;
+    font-size: inherit;
+
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+.details{
+    background-color:#A3AABF;
+    border: groove 3px;
+    border-color:#A3AABF;
+   display:flex-inline;
+   flex-wrap:wrap;
+   justify-content: space-between;
+   margin: 25px;
+   }   
+
+.details h1{
+    font-family: Heveltica;
+    font-weight:bolder;
+}
+.details ul{
+    list-style-type:none;
+}
+
+  .details a{
+      text-decoration: none;
+      color: #000;
+
+  }  
+  
+ .details a:hover{
+     background-color:#fff;
+ }
+ @media only screen and (min-width:411px){
+     .details{
+         display:flex;
+         flex-wrap:wrap;
+         justify-content:space-around;
+         width:100%;
+     }
+     .details h1{ position: relative;
+     left: 25px; 
+     font-size: 1.5em;
+
+
+     }
+ }
+@media only screen and (min-width: 743px){
+    .details{
+        display:flex;
+        flex:1;
+        
+
+    }
+    .details h1{
+        position: relative;
+        font-size:1.5em;
+        right: 100px;
+    }
+    .details h1 ul{
+        width:50%;
+        order: 1;
+      
+    }
+    .details img{
+        width:50%;
+        order:1;
+        padding: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        left: 50px;
+
+            }
+}
+/* the name on the CV has to be responsive in all screens so for smaller screens*/
+@media only screen and (min-width:411px){
+    .details{
+        display:flex; 
+        flex-wrap: wrap;
+        
+    }
+    .details h1{
+        position: relative;
+        right:80px;
+    }
+    #cover-photo{
+        width:200px;
+        position:relative;
+        left: 100px;
+    }
+}
+/* image styles here*/
+#cover-photo img{
+    width: 100%;
+    height: auto;
+}
+#cover-photo{
+    width:300px;
+} 
+
+
+ .career{
+     background-color:#A65D05;
+     border: groove 3px;
+     border-color:#A65D05;
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:space-evenly;
+     padding:30px
+
+ }
+ @media only screen and (min-width:725px){
+    .career{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 60px;
+    }
+    .career h1{
+        margin: 80px;
+        align-self:center;
+        position: relative;
+        bottom: 150px;
+
+    }
+} /* now grids are used to increase the responsiveness of other parts of the page*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(211px,1fr));
+    grid-gap: 2em;
+    align-items:flex-start;
+    margin: 20px;
+     border: groove 3px; 
+     border-color:#F2A413;
+} 
+.grid p{
+    margin: 10px;
+}
+
+.achievement{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:#8C4303;
+    border: groove 2px;
+    border-color:#8C4303;
+    
+}
+.container{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(411px,1fr));
+    grid-gap: 2em;
+}
+ .statement{
+     display: flex;
+     flex-wrap: wrap;
+     background-color:#A3AABF;
+     border: groove 3px;
+     border-color:#A3AABF;
+    
+ }
