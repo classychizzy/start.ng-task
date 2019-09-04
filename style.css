@@ -5,6 +5,7 @@
 
 body{
     background-color:#F2A413;
+    font-family:  'Roboto Condensed', sans-serif;
 }
 /* let's apply styles to the page starting with the nav-bar */
 .contact{
@@ -185,4 +186,19 @@ body{
      border: groove 3px;
      border-color:#A3AABF;
     
+ } 
+.form{
+     margin:10px; 
+     width:100%;
+     border:none;
+     
+
+ } 
+ input{
+     width:100%; 
+     padding:5px;
+     margin:10px;
+ }
+ input[name="message"]{
+     height:150px;
  }
